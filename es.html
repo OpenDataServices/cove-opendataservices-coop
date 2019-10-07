@@ -31,13 +31,9 @@
           </div><!--col-md-8-->
           <div class="col-md-2">
             
-            <form class="language-select" action="/i18n/setlang/" method="post">
-            <input type="hidden" name="csrfmiddlewaretoken" value="6x9dTrj2sHjowj7Tg6D8uWRNriy5Nmq7">
-              <input name="next" type="hidden" value="">
-              <select name="language" onchange="this.form.submit()">
-              
-              
-              
+            <form class="language-select" action="index.html" method="post">
+              <select name="language">
+
               
               <option value="en">
                   English (en)
@@ -230,6 +226,16 @@ podrían preferir un formato de hoja de cálculo.</p>
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
     })();
+
+    $( document ).ready(function() {
+        $('form.language-select select').change(function(select) {
+            var val = $( "form.language-select select option:selected" ).val();
+            if (val =="en") {
+                 location.replace("/");
+            }
+        });
+    });
+
   </script>
   <noscript><p><img src="//mon.opendataservices.coop/piwik//piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
   <!-- End Piwik Code -->
