@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="es_files/bootstrap.css">
+  
+
+  <link rel="stylesheet" type="text/css" href="es_files/style.css">
+  <link rel="stylesheet" type="text/css" href="es_files/dataTables.css">
+  
+  <title>CoVE </title>
+</head>
+<body>
+  
+  <div style="background-color: orange; color: black; width: 100%; text-align: center; font-weight: bold; right: 0; left: 0">This tool is <em>alpha</em>. Please report any problems on <a href="https://github.com/OpenDataServices/cove/issues">GitHub issues</a>.</div>
+  
+  
+  
+    
+  <div class="container">
+    
+    <div class="page-header">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="application-name"><a href="http://cove.opendataservices.coop/">CoVE</a></h1>
+            <p>Convertir, Validar, Explorar</p>
+          </div><!--col-md-8-->
+          <div class="col-md-2">
+            
+            <form class="language-select" action="/i18n/setlang/" method="post">
+            <input type="hidden" name="csrfmiddlewaretoken" value="6x9dTrj2sHjowj7Tg6D8uWRNriy5Nmq7">
+              <input name="next" type="hidden" value="">
+              <select name="language" onchange="this.form.submit()">
+              
+              
+              
+              
+              <option value="en">
+                  English (en)
+              </option>
+              
+              <option value="es" selected="selected">
+                  español (es)
+              </option>
+              
+              </select>
+              <noscript>
+                
+                <input type="submit" value=Ir />
+              </noscript>
+            </form>
+            
+          </div><!--col-md-2-->
+          <div class="col-md-2">
+            
+            
+          </div>
+        </div><!--row-->
+    </div><!--page-header-->
+    
+  
+  
+
+<div class="row">
+  <div class="col-sm-6 col-md-6">
+    <div class="thumbnail">
+      
+      <img src="es_files/360Giving-logo.png" alt="360Giving Logo" width="200" height="200">
+      <div class="caption">
+        <h3>Estándar de Datos 360Giving</h3>
+        <p>360Giving proporciona soporte para que los subvencionadores 
+publiquen sus datos de subvenciones abiertamente, entender sus datos, y 
+utilizar los datos para crear herramientas en línea que hagan las 
+decisiones sobre donaciones más eficaces.</p><br>
+        <p><a href="http://cove.opendataservices.coop/360/" class="btn btn-primary" role="button">Herramienta de calidad de datos 360Giving</a>
+      </p></div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-6">
+    <div class="thumbnail">
+      
+      <img src="es_files/lKMj_JJ4_400x400.jpeg" alt="Open Contracting Logo" width="200" height="200">
+      <div class="caption">
+        <h3>Estándar de Datos de Contrataciones Abiertas</h3>
+        <p>El Estándar de Datos de Contrataciones Abiertas promueve el 
+uso eficaz de los datos de contrataciones, ayudando a los usuarios a 
+"seguir el dinero", y proporciona una plantilla clara para los gobiernos
+ que deseen dar a conocer sus datos.</p><br>
+        <p><a href="http://cove.opendataservices.coop/ocds/" class="btn btn-primary" role="button">Herramienta de Datos de Contrataciones Abiertas</a>
+      </p></div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+    <p>La creación y uso de Datos Abiertos se hace más fácil cuando hay buenas herramientas para ayudar.</p>
+    <p>CoVe existe para ayudar a la gente a:</p>
+    <ul>
+      <li>Convertir datos entre formatos comunes (por ejemplo, csv a json)</li>
+      <li>Validar datos contrastándolos con las reglas</li>
+      <li>Explorar los datos que las máquinas pueden leer fácilmente, pero humanos no tanto</li>
+    </ul>
+   <!--<p>CoVE is pretty good at Converting right now, and we're working on Validation and Exploration all the time.</p>
+   <p>CoVE is currently designed to work with data built to the 360Giving and Open Contracting data standards.</p>-->
+</div>
+
+
+  </div><!-- /.container -->
+  
+  <div class="container">
+    
+  
+  
+
+  
+  
+  
+  <div id="more-information" class="panel panel-default">
+    <div class="panel-heading" data-toggle="collapse" data-target="#more-information-body">
+      <h3 class="panel-title"> Más información <small> clic para ver. </small></h3>
+    </div>
+
+    <div id="more-information-body" class="collapse">
+    <div class="panel-body">
+    
+      <h2 class="heading-in-panel"><small>¿Qué sucede con los datos que proporciono a este sitio?</small></h2>
+        <p>Conservamos los datos que cargas o pegas a este sitio en nuestro servidor durante 7 días.</p>
+        <p>Si proporciona un enlace, buscamos los datos de ese enlace y los almacenamos en nuestro servidor durante 7 días.</p>
+        <p>Borramos todos los datos de más de 7 días desde nuestros servidores diariamente, no conservamos ninguno de los datos originales.</p>
+        <p>Mientras los datos están en nuestros servidores podemos 
+acceder a esos datos para ayudarnos a entender cómo las personas usan 
+esta aplicación, lQué tipo de datos se están suministrando, los errores 
+comunes que existen, etc.</p>
+        <p>También podemos conservar los datos en las copias de 
+seguridad de nuestros servidores, lo que significa que algunos datos 
+pueden ser retenidos por más tiempo. No tenemos ninguna intención de 
+utilizar estos datos para nada que no sea la recuperación del servidor 
+en caso de emergencia.</p>
+        <p>Guardamos algunos metadatos sobre los datos suministrados a 
+este sitio. Los detalles se pueden encontrar en el código, pero pueden 
+incluir información sobre si el archivo fue subido, vinculado o pegado, 
+el tamaño del archivo, la fecha / hora en que se suministra y así 
+sucesivamente.</p>
+
+      <h2><small>¿Por qué eliminan los datos después de 7 días?</small></h2>
+        <p>Este es un servicio que permite a la gente a explorar datos 
+legibles por computadora. Como tal no vemos la necesidad de almacenar y 
+reunir todo lo que la gente subre al sitio por siempre. Hemos optado por
+ 7 días como un tiempo práctico que permite a la gente compartir los 
+resultados con colegas, pero también permite que los datos desaparezcan 
+con el tiempo para ahorrar a las personas tener que hacer una limpieza 
+ellos mismos.</p>
+        <p>Creemos que la supresión de los datos suministrados después 
+de 7 días proporciona un nivel de privacidad para los usuarios de este 
+servicio.</p>
+    
+
+    
+      <h2><small>¿Por qué ofrecer versiones convertidas?</small></h2>
+      <p>El W3C <a href="http://www.w3.org/TR/dwbp/">Datos sobre Mejores Prácticas en la Web</a>
+ recomienda poner los datos abiertos disponibles en una variedad de 
+formatos para satisfacer las necesidades de los distintos usuarios, por 
+ejemplo, los desarrolladores pueden requerir JSON, los investigadores 
+podrían preferir un formato de hoja de cálculo.</p>
+    
+    </div>
+    </div>
+  </div>
+
+  </div><!-- /.container -->
+
+  <div class="container">
+    <div id="footer">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Acerca de</h4>
+          <ul class="text-muted">
+            <li>Construido por <a href="http://opendataservices.coop/">Open Data Services</a></li>
+            <li>El código de este sitio está disponible en<br>GitHub: <a href="https://github.com/OpenDataServices/cove/">Cove - COnvert Validate &amp; Explore</a><br>Licencia: <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPLv3</a><br>Reportar / Ver issues: <a href="https://github.com/OpenDataServices/cove/issues">Issues del Cove</a>
+            </li>
+          </ul>
+          <ul class="text-muted">
+            <li><a href="http://cove.opendataservices.coop/360/terms">Términos y condiciones</a></li>
+          </ul>
+          
+          <p class="text-muted">Versión en ejecución<a href="https://github.com/OpenDataServices/cove/tree/515135f">515135f</a></p>
+        </div>
+        <div class="col-md-6">
+          <h4>Enlaces</h4>
+          <ul class="text-muted">
+            
+            
+          </ul>
+        </div>
+      </div>
+      
+      
+    </div><!-- end footer -->
+  </div>
+
+  <script type="text/javascript" async="" defer="defer" src="es_files/piwik.js"></script><script src="es_files/jquery-2.js"></script>
+  <script src="es_files/bootstrap.js"></script>
+  
+  <script type="text/javascript">
+     $("#more-information-body").attr('class', 'collapse');
+  </script>
+
+  
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    
+    
+    
+      _paq.push(['setCustomDimension', 4, 'es']);
+    
+    
+      _paq.push(['setCustomDimension', 5, 'es']);
+    
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//mon.opendataservices.coop/piwik/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 5]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//mon.opendataservices.coop/piwik//piwik.php?idsite=5" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+  
+  
+
+
+</body></html>
